@@ -10,10 +10,11 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-text-color: #2196f3;
+  --white-proect-color: #ffffff;
 }
 
 body {
-  background-color: white;
+  background-color: var(--white-proect-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
@@ -25,7 +26,7 @@ body {
 /* Header */
 .logo {
   color: var(--accent-text-color);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -43,6 +44,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.current.link {
+  color: var(--accent-text-color);
 }
 
 .site-nav .link:hover,
@@ -78,11 +83,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-proect-color);
 }
 
 .button {
   background-color: var(--accent-text-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -91,13 +97,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--white-proect-color);
 }
 
 /* <!-- особливості --> */
 
 .section-paragraph {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -105,7 +110,6 @@ body {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -115,7 +119,6 @@ body {
 /* заголовки другого рівня */
 
 .box {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -132,11 +135,10 @@ body {
 }
 
 .team-job {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* footer */
@@ -146,7 +148,11 @@ body {
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-proect-color);
+}
+
+.footer-address {
+  font-style: normal;
 }
 
 .link {
@@ -163,13 +169,14 @@ body {
 }
 
 .location.link {
-  color: #ffffff;
+  color: var(--white-proect-color);
 }
 
 /* стилізація сторінки портфоліо */
 
 .second.button {
   color: var(--primary-text-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -181,7 +188,7 @@ body {
 
 .second.button:hover,
 .second.button:focus {
-  color: #ffffff;
+  color: var(--white-proect-color);
   background-color: var(--accent-text-color);
 }
 
@@ -190,6 +197,10 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.portfolio .portfolio-title {
+  color: var(--primary-text-color);
 }
 
 .portfolio-sites {

@@ -23,6 +23,24 @@ body {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
 .logo {
   color: var(--accent-text-color);
@@ -73,7 +91,7 @@ body {
 /* шапка */
 
 .hero {
-  background-color: black;
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -106,7 +124,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .section-title {
@@ -127,6 +145,10 @@ body {
 
 /* <!-- команда --> */
 
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -144,7 +166,7 @@ body {
 /* footer */
 
 .footer {
-  background-color: #000000;
+  background-color: #2f303a;
 }
 
 .logo-footer {
